@@ -1,5 +1,6 @@
 # Humax-CLI
 An unofficial python command-line client for Humax IR4000HD with more features than normal clients
+> This all came from reversing the android app and there will be an article ASAP :smile:
 
 # Screenshot
 ![screenshot](https://github.com/D4Vinci/Humax-CLI/blob/master/screenshots/1.png)
