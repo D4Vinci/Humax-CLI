@@ -20,7 +20,7 @@ optional arguments:
                         Button to send or buttons seperated by space.
 ```
 
-# Implemented buttons till now (can be viewed with -l option)
+## Implemented buttons till now (can be viewed with -l option)
 ```
 Buttons implemented till now :
   +/-                Refers to volume up/down buttons.
@@ -31,7 +31,7 @@ Buttons implemented till now :
   on/off             Turn the device on/off of course
 
 ```
-# All the buttons codes that can be used with --try-this option (Some of them already implemented)
+### All the buttons codes that can be used with --try-this option (Some of them already implemented)
 ```
 STANDBY(1),
 0(16),
