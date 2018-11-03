@@ -217,5 +217,10 @@ NULL(0);
 - Python 3.x or 2.x (preferred 3).
 - Linux or Windows system.
 
+## Donation
+If this work has been useful for you, feel free to thank me by buying me a coffee :)
+
+[![Coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/d4vinci)
+
 ## Contact
 - [Twitter](https://twitter.com/D4Vinci1)
