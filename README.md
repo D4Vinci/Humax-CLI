@@ -1,5 +1,5 @@
 # Humax-CLI
-An unofficial python command-line client for Humax IR4000HD with more features than normal clients
+An unofficial Humax IR4000HD terminal client with enhanced features.
 > This all came from reversing the android app and there will be an article ASAP :smile:
 
 # Screenshot
@@ -24,15 +24,17 @@ optional arguments:
 ## Implemented buttons till now (can be viewed with -l option)
 ```
 Buttons implemented till now :
-  +/-                Refers to volume up/down buttons.
-  ch+/ch-            Refers to channel plus/minus buttons.
-  Ok/mute/back/exit  Refers to its name of course :3
-  U/D/R/L            Arrows buttons (U for up, D for down and so on...)
-  0 1...9            Enter channel numbers seperated by spaces
-  on/off             Turn the device on/off of course
+	+/-                Refers to volume up/down buttons.
+	ch+/ch-            Refers to channel plus/minus buttons.
+	Ok/mute/back/exit  Refers to its name of course :3
+	U/D/R/L            Arrows buttons (U for up, D for down and so on...)
+	0 1...9            Enter channel numbers seperated by spaces
+	Rec                Record the current program on the current channel
+	Stop               Stop recording
+	on/off             Turn the device on/off of course
 
 ```
-### All the buttons codes that can be used with --try-this option (Some of them already implemented)
+### All the buttons codes that can be used with the `--try-this` option (Some of them already implemented)
 ```
 STANDBY(1),
 0(16),
