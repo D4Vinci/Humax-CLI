@@ -53,7 +53,7 @@ def main():
 	parser.add_argument("-b", type=str, metavar='<button>', help="Button to send or buttons seperated by space.", nargs='+')
 	args    = parser.parse_args()
 	keys = {"+":112,"-":113,"ch+":80,"ch-":81,"ok":88,"u":84,"d":85,"r":83,"l":82,"mute":114,"back":86,"on":1,"off":1,
-		"exit":87,
+		"exit":87,"rec":147,"stop":146,
 		"0":16,"1":17,"2":18,"3":19,"4":20,"5":21,"6":22,"7":23,"8":24,"9":25}
 	if args.list :
 		print("""Buttons implemented till now :
@@ -62,6 +62,8 @@ def main():
 	Ok/mute/back/exit  Refers to its name of course :3
 	U/D/R/L            Arrows buttons (U for up, D for down and so on...)
 	0 1...9            Enter channel numbers seperated by spaces
+	Rec                Record the current program on the current channel
+	Stop               Stop recording
 	on/off             Turn the device on/off of course
 	""")
 	elif args.jam :
@@ -88,9 +90,10 @@ def main():
 			for btn in btns:
 				if btn in list("0123456789"):
 					send_button(keys[btn])
+					time.sleep(0.2)
 				else:
 					send_button(keys[btn.lower()])
-					time.sleep(0.2)
+					time.sleep(0.5)
 		except Exception as e:
 			#print(e)
 			print("Error in sending button!")
