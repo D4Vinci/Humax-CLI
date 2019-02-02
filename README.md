@@ -7,34 +7,36 @@ An unofficial Humax IR4000HD terminal client with enhanced features.
 
 # Usage :
 ```
-usage: sendUDP.py [-h] [-l] [--try-this <code>] [--loop <button>] [-j]
-                  [-b <button> [<button> ...]]
+usage: sendUDP.py [-h] [-i IP] [-l] [--try-this <code>] [--loop <button>] [-j] [-b btn [btn ...]]
 
 optional arguments:
-  -h, --help            show this help message and exit
-  -l, --list            List all available buttons.
-  --try-this <code>     Try to send a specific code.
-  --loop <button>       keep sending this button every 0.5s (Stop with Ctrl+C)
-  -j, --jam             Prevent any one from sending commands to the receiver
-                        (Even with the remote controller)
-  -b <button> [<button> ...]
-                        Button to send or buttons seperated by space.
+  -h, --help         show this help message and exit
+  -i IP, --ip IP     Receiver IP address. (Most times 192.168.x.2)
+  -l, --list         List all available buttons.
+  --try-this <code>  Try to send a specific code.
+  --loop <button>    Keep sending this button every 0.5s (Stop with Ctrl+C)
+  -j, --jam          Prevent all connections to the receiver.
+  -b btn [btn ...]   Buttons separated by space.
+
 ```
 
-## Implemented buttons till now (can be viewed with -l option)
+## Implemented buttons till now and also can be viewed with `-l` option
 ```
 Buttons implemented till now :
-	+/-                Refers to volume up/down buttons.
-	ch+/ch-            Refers to channel plus/minus buttons.
-	Ok/mute/back/exit  Refers to its name of course :3
-	U/D/R/L            Arrows buttons (U for up, D for down and so on...)
-	0 1...9            Enter channel numbers seperated by spaces
-	Rec                Record the current program on the current channel
-	Stop               Stop recording
-	on/off             Turn the device on/off of course
+    +/-                Refers to volume up/down buttons.
+    ch+/ch-            Refers to channel plus/minus buttons.
+    U/D/R/L            Arrows buttons (U for up, D for down and so on...)
+    0 1...9            Enter channel numbers separated by spaces
+    Rec                Record the current program on the current channel
+    Stop               Stop recording
+    Forward/Backward   Controlling the current file/recording
+    on/off             Turn the device on/off of course
+    And the following refers to its name:
+        Ok, Mute, Back, Exit, Menu, Media, Last, Settings, Home
 
 ```
-### All the buttons codes that can be used with the `--try-this` option (Some of them already implemented)
+
+### All the buttons codes, which you can try code with the `--try-this` option
 ```
 STANDBY(1),
 0(16),
@@ -215,9 +217,9 @@ UNKNOWN(65535),
 NULL(0);
 ```
 ## Installing and requirements
-### To make the tool work at its best you must have :
 - Python 3.x or 2.x (preferred 3).
-- Linux or Windows system.
+- Any terminal.
+- On windows run `python -m pip install -r windows-requirements.txt` to enable coloring
 
 ## Donation
 If this work has been useful for you, feel free to thank me by buying me a coffee :)
